@@ -1,0 +1,92 @@
+body{
+    font-family: sans-serif;
+    background-color: #DDDDDD;
+}
+h3{
+    color: #AAAAAA;
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: 100;
+    text-align: center;
+}
+p{
+    color: #AAAAAA;
+    text-align: center;
+}
+#icon-set-container {
+    perspective: 1000px;
+    margin: 3em;
+    padding: 3em;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto auto;
+}
+#icon-set-container .icon{
+    margin: 2em 1em;
+}
+#icon-set-container .icon svg{
+	width: 125px;
+    height: 125px;
+    -webkit-transition: transform .8s;
+    transition: transform .8s;
+}
+#icon-set-container .icon:hover svg{
+    cursor: pointer;
+}
+#icon-set-container .icon svg path:nth-child(1){
+    -webkit-transition: fill .5s;
+    transition: fill .5s;
+}
+#icon-set-container .icon div{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 250px;
+    padding: 1em 2em;
+    background: #EAEAEA;
+    border-radius: 20px;
+    z-index: 5;
+    color: #666666;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: translate(-40%, -40%) rotateX(90deg);
+    -webkit-transform: translate(-40%, -40%) rotateX(90deg);
+    -webkit-transition: transform .8s, -webkit-transform .8s, opacity .8s;
+    transition: transform .8s, -webkit-transform .8s, opacity .8s;
+}
+#icon-set-container .icon div h3{
+    font-size: 1.5em;
+}
+#icon-set-container .icon:hover div{
+    opacity: 1;
+    transform: translate(-40%, 0%) rotateX(0deg);
+    -webkit-transform: translate(-40%, 0%) rotateX(0deg);
+}
+.logo_color{fill:#FFFFFF;}
+.logo_stroke{fill:rgba(255, 255, 255, 0.3);stroke:#FFFFFF;stroke-width:10;}
+.default_hexagone_color{fill:#7ca6ff;}
+.facebook_hexagone_color{fill:#264D90;}
+.twitter_hexagone_color{fill:#57A7DC;}
+.instagram_hexagone_color{fill:#E200A8;}
+.linkedin_hexagone_color{fill:#0072B3;}
+.googleplus_hexagone_color{fill:#D33D27;}
+.pinterest_hexagone_color{fill:#B92025;}
+.youtube_hexagone_color{fill:#CA2026;}
+.whatsapp_hexagone_color{fill:#0DB04B;}
+.snapchat_hexagone_color{fill:#F9EC00;}
+.skype_hexagone_color{fill:#00A7E0;}
+.spotify_hexagone_color{fill:#4AB654;}
+.stackoverflow_hexagone_color{fill:#F07522;}
+
+.rotate{
+	-webkit-animation:spin 1s linear infinite;
+	-moz-animation:spin 1s linear infinite;
+	animation:spin 1s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
