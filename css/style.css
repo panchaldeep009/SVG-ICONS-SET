@@ -53,6 +53,7 @@ p{
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     backface-visibility: hidden;
+    filter: drop-shadow( 10px 10px 20px rgba(0,0,0,0.3) );
     transform: translate(-40%, -40%) rotateX(90deg);
     -webkit-transform: translate(-40%, -40%) rotateX(90deg);
     -webkit-transition: transform .8s, -webkit-transform .8s, opacity .8s;
