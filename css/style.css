@@ -30,8 +30,13 @@ p{
 #icon-set-container .icon svg{
 	width: 125px;
     height: 125px;
-    -webkit-transition: transform .8s;
-    transition: transform .8s;
+    -webkit-transition: transform .8s, 
+                -webkit-transform .8s;
+    -moz-transition: -moz-transform .8s;
+    -ms-transition: -ms-transform .8s;
+    -o-transition: -o-transform .8s;
+    transition: transform .8s, 
+                -webkit-transform .8s;
 }
 #icon-set-container .icon:hover svg{
     cursor: pointer;
@@ -50,22 +55,50 @@ p{
     border-radius: 20px;
     z-index: 5;
     color: #666666;
+
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+
     backface-visibility: hidden;
+
     filter: drop-shadow( 10px 10px 20px rgba(0,0,0,0.3) );
-    transform: translate(-40%, -40%) rotateX(90deg);
+    -webkit-filter: drop-shadow( 10px 10px 20px rgba(0,0,0,0.3) );
+    -moz-filter: drop-shadow( 10px 10px 20px rgba(0,0,0,0.3) );
+    -ms-filter: drop-shadow( 10px 10px 20px rgba(0,0,0,0.3) );
+    -o-filter: drop-shadow( 10px 10px 20px rgba(0,0,0,0.3) );
+
     -webkit-transform: translate(-40%, -40%) rotateX(90deg);
-    -webkit-transition: transform .8s, -webkit-transform .8s, opacity .8s;
-    transition: transform .8s, -webkit-transform .8s, opacity .8s;
+    -moz-transform: translate(-40%, -40%) rotateX(90deg);
+    -ms-transform: translate(-40%, -40%) rotateX(90deg);
+    -o-transform: translate(-40%, -40%) rotateX(90deg);
+    transform: translate(-40%, -40%) rotateX(90deg);
+
+    -webkit-transition: transform .8s, 
+                -webkit-transform .8s,
+                opacity .8s;
+    -moz-transition: -moz-transform .8s,
+                opacity .8s;
+    -ms-transition: -ms-transform .8s,
+                opacity .8s;
+    -o-transition: -o-transform .8s,
+                opacity .8s;
+    transition: transform .8s, 
+                -webkit-transform .8s,
+                opacity .8s;
 }
 #icon-set-container .icon div h3{
     font-size: 1.5em;
 }
 #icon-set-container .icon:hover div{
     opacity: 1;
-    transform: translate(-40%, 0%) rotateX(0deg);
     -webkit-transform: translate(-40%, 0%) rotateX(0deg);
+    -moz-transform: translate(-40%, 0%) rotateX(0deg);
+    -ms-transform: translate(-40%, 0%) rotateX(0deg);
+    -o-transform: translate(-40%, 0%) rotateX(0deg);
+    transform: translate(-40%, 0%) rotateX(0deg);
 }
 .logo_color{fill:#FFFFFF;}
 .logo_stroke{fill:rgba(255, 255, 255, 0.3);stroke:#FFFFFF;stroke-width:10;}
@@ -86,8 +119,13 @@ p{
 .rotate{
 	-webkit-animation:spin 3s linear infinite;
 	-moz-animation:spin 3s linear infinite;
+	-ms-animation:spin 3s linear infinite;
+	-o-animation:spin 3s linear infinite;
 	animation:spin 3s linear infinite;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-ms-keyframes spin { 100% { -ms-transform: rotate(360deg); } }
+@-o-keyframes spin { 100% { -o-transform: rotate(360deg); } }
