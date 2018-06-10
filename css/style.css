@@ -84,9 +84,9 @@ p{
 .stackoverflow_hexagone_color{fill:#F07522;}
 
 .rotate{
-	-webkit-animation:spin 1s linear infinite;
-	-moz-animation:spin 1s linear infinite;
-	animation:spin 1s linear infinite;
+	-webkit-animation:spin 3s linear infinite;
+	-moz-animation:spin 3s linear infinite;
+	animation:spin 3s linear infinite;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
